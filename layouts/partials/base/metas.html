@@ -67,7 +67,14 @@
 {{ end }}
 <link rel="canonical" href="{{ .Permalink }}" />
 
+{{ $static_dir := "static/" }}
+{{ $touch_icon144 := "touch-icon-144-precomposed.png" }}
+{{ if (where (readDir $static_dir) "Name" $touch_icon144) }}
 <link rel="apple-touch-icon" sizes="144x144" href="{{ "/touch-icon-144-precomposed.png" | absURL }}">
+{{ end }}
+
+{{ if (where (readDir $static_dir) "Name" "favicon.ico") }}
 <link href="{{ "/favicon.ico" | absURL }}" rel="icon">
+{{ end }}
 
 {{ .Hugo.Generator }}
