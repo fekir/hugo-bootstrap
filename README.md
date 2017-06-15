@@ -2,8 +2,7 @@ hugo-bootstrap
 ==============
 A theme with bootstrap 4, font-awesome, highlightjs
 
-*NOTE: This theme is copied inspired [Icarus] https://github.com/digitalcraftsman/hugo-icarus-theme
-Feel free to make changes and open pull requests.*
+*NOTE: This theme is a fork of https://github.com/mmrath/hugo-bootstrap*
 
 You can find a live site using this theme [here](http://mmrath.com/).
 
@@ -17,7 +16,7 @@ You can find a live site using this theme [here](http://mmrath.com/).
 $ cd your_site_repo/
 $ mkdir themes
 $ cd themes
-$ git clone https://github.com/mmrath/hugo-bootstrap
+$ git clone https://github.com/fekir/hugo-bootstrap
 ```
 
 See the [official Hugo themes documentation](http://gohugo.io/themes/installing) for more info.
